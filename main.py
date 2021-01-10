@@ -7,9 +7,9 @@ current_location = dirname(abspath(__file__))
 s = perf_counter()
 # df = read_excel('./data/indeed_results.xlsx')
 
-content = 'Acknowledgment of PAN application Aadhaar Card or voter ID Benefits: Flexible working hours for security guards, computer'
+content = 'account executives night shifts weekend Attractive Weekly, weekend and monthly Incentives for 10th pass, 12th pass'
     
-print(f'{content[0:33]=}')
+print(f'{content[44:62]=}')
 
 e = perf_counter()
 print(f'Time Taken: {e-s:.2f} seconds')
