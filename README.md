@@ -4,5 +4,5 @@ In this repository I will be building a custom NER that will have entities like 
 
 The data was mostly scraped from indeed previously and some other websites could be added. 
 
-[main python file](./main.py) -> Consists All the Code
+[main python file](./main.py) -> Consists All the Code<br>
 [custom_ner jupyter file](./custom_ner.ipynb) -> Consists of Demo Code
