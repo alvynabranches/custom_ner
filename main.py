@@ -70,5 +70,7 @@ for _, annotations in train:
         
 disable_pipes = [pipe for pipe in nlp.pipe_names if pipe != 'ner']
 
+
+
 e = perf_counter()
 print(f'Time Taken: {e-s:.2f} seconds')
