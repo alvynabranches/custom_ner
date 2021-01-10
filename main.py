@@ -7,9 +7,9 @@ current_location = dirname(abspath(__file__))
 s = perf_counter()
 # df = read_excel('./data/indeed_results.xlsx')
 
-content = 'Documents to be carried for Walk-in: Valid Two-wheeler Driver License and Driver RC book PAN Card or'
+content = 'Acknowledgment of PAN application Aadhaar Card or voter ID Benefits: Flexible working hours for security guards, computer'
     
-print(f'{content[74:88]=}')
+print(f'{content[0:33]=}')
 
 e = perf_counter()
 print(f'Time Taken: {e-s:.2f} seconds')
