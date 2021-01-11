@@ -34,7 +34,7 @@ ner = nlp.get_pipe('ner')
 train = [
     (
         'Official Job posted from SwiggyJoin Swiggy family as Part-Time or a Full-time Food Delivery executive.', 
-        {'entities':[(25,31,'ORG'),(36,42,'ORG'),(53,63,'JT'),(68,77,'JT'),(78, 101, 'JR')]}
+        {'entities':[(25,31,'ORG'),(36,42,'ORG'),(53,63,'JT'),(68,77,'JT'),(78, 101,'JR')]}
     ),
     (
         'Who can be an ideal Rider Driver Delivery Boy Logistics AdminDelivery Executive for Swiggy?', 
@@ -99,12 +99,15 @@ with nlp.disable_pipes(*disable_pipes):
             print(f'Losses: {losses}')
             
 print('After Training')
-for text, _ in train:
-    doc = nlp(text)
-    print(doc)
-    print(f'Entities: {[(ent.text, ent.label_) for ent in doc.ents]}')
+# for text, _ in train:
+#     doc = nlp(text)
+#     print(doc)
+#     print(f'Entities: {[(ent.text, ent.label_) for ent in doc.ents]}')
 
-doc = nlp('Official Job posted from SwiggyJoin Swiggy family as Part-Time or a Full-time Food Delivery executive. Who can be an ideal Rider Driver Delivery Boy Logistics AdminDelivery Executive for Swiggy? Minimum qualification - Fresher, 10th pass, 12th pass, Graduate, New Graduates, Trainee Candidates with prior experience in Data entry, Call Centre, Admin, Collection Agents, Collection Executives, Customer Support Executive, Office Assistant, Driver, Delivery Boys, Back Office, Teacher, Banking, Accounts, Operator can apply to maximize their earnings up to 25,000 per month. Documents to be carried for Walk-in: Valid Two-wheeler Driver License and Driver RC book PAN Card or Acknowledgment of PAN application Aadhaar Card or voter ID Benefits: Flexible working hours for security guards, computer operators, account executives night shifts weekend Attractive Weekly, weekend and monthly Incentives for 10th pass, 12th pass')
+
+print('\n\n\n')
+doc = nlp('Show me the list of people working in Google as Data Scientist for a Full-time position having qualification of B.Tech with job skill of NLP')
+print(doc)
 for ent in doc.ents:
     print(f'Text: {ent.text:4}\t\t Start Char: {ent.start_char:4}\t\t End Char: {ent.end_char}\t\t Label: {ent.label_}')
 
