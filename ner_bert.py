@@ -12,7 +12,7 @@ print(torch.__version__)
 print(torch.cuda.is_available())
 print(torch.cuda.device_count())
 
-data = pd.read_csv('ner_dataset.csv', encoding='latin1')
+data = pd.read_csv('data/ner_dataset.csv', encoding='latin1')
 data.fillna(method='ffill')
 
 data['Sentence #'] = LabelEncoder().fit_transform(data['Sentence #'])
@@ -21,5 +21,5 @@ data['Sentence #'] = LabelEncoder().fit_transform(data['Sentence #'])
 model = ClassificationModel('roberta', 'roberta-base', use_cuda=torch.cuda.is_available())
 
 # community model
-model = ClassificationModel('bert', 'KB/bert-base-english-cased', use_cuda=torch.cuda.is_available())
+model = ClassificationModel('bert', 'KB/bert-base-swedish-cased', use_cuda=torch.cuda.is_available())
 
