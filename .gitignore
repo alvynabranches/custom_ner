@@ -129,5 +129,7 @@ dmypy.json
 .pyre/
 
 # Custom
-data/archive.zip
+data/*.zip
 data/ner.csv
+data/*.tar
+data/*.tgz
