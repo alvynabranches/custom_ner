@@ -13,7 +13,7 @@ print(torch.cuda.is_available())
 print(torch.cuda.device_count())
 
 data = pd.read_csv('data/ner_dataset.csv', encoding='latin1')
-data.fillna(method='ffill')
+data.fillna(method='ffill', inplace=True)
 
 data['Sentence #'] = LabelEncoder().fit_transform(data['Sentence #'])
 
