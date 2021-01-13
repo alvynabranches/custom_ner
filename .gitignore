@@ -128,8 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Custom
+# Custom Data Files
 data/*.zip
-data/ner.csv
 data/*.tar
 data/*.tgz
+data/ner.csv
+
