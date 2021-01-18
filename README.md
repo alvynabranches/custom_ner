@@ -7,3 +7,4 @@ The data was mostly scraped from indeed previously and some other websites could
 [main python file](./main.py) -> Consists All the Code<br>
 [custom_ner jupyter file](./custom_ner.ipynb) -> Consists of Demo Code
 [BERT NER](https://colab.research.google.com/drive/111YOXSJSuNNCoU2VqkknQoTyV9aqYCeA#scrollTo=L5bpeErGSEgj)
+[BERT NER (copy)](./bert_ner.ipynb)
