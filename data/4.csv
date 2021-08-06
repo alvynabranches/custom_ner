@@ -1,0 +1,8 @@
+sentence_id,words,labels
+1,20-30,B-GEN
+2,30-40,B-GEN
+3,40-55,B-GEN
+4,55-70,B-GEN
+5,70-90,B-GEN
+6,90,B-GEN
+6,Plus,I-GEN

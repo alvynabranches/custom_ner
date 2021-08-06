@@ -1,0 +1,12 @@
+sentence_id,words,labels
+1,Very,B-RAT
+1,Bad,I-RAT
+2,Bad,B-RAT
+3,Average,B-RAT
+4,Good,B-RAT
+5,Very,B-RAT
+5,Good,I-RAT
+6,Outstanding,B-RAT
+7,Critical,B-RAT
+8,Most,B-RAT
+8,Critical,I-RAT

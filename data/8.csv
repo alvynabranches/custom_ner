@@ -1,0 +1,15 @@
+sentence_id,words,labels
+1,Division,B-DIV
+1,A,I-DIV
+2,Division,B-DIV
+2,B,I-DIV
+3,Division,B-DIV
+3,C,I-DIV
+4,Division,B-DIV
+4,D,I-DIV
+5,Division,B-DIV
+5,E,I-DIV
+6,Division,B-DIV
+6,F,I-DIV
+7,Division,B-DIV
+7,G,I-DIV

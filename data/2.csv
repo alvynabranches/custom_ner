@@ -1,0 +1,3 @@
+sentence_id,words,labels
+1,Male,B-GEN
+2,Female,B-GEN
